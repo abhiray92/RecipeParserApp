@@ -20,25 +20,26 @@ def main():
     elif ui.spit_file or ui.approved_file:
         # Create parser instance
         parser = RecipeParser(ui.spit_file, ui.approved_file)
+
         # Parse files
         table = parser.parse_with_spit_file()
         approved_val = parser.get_approvedfile()
-        #Get the Column selected from UI
+        
+	    #Get the Column selected from the Recipe file from the line
         selected_column = parser.selected_column
+
         #Modified Approved_val for comparison with the Spit File from the Line
         approved_val = parser.selected_col_approved_val(approved_val)
 
         # Additional operations and comparisons as needed
         combined_df = parser.compare_columns(table,approved_val)
-
-        print(combined_df)
     
         # Apply highlighting
         styled_result = parser.apply_highlighting(combined_df)
 
         name = 'RecipeComparison.html'
-        styled_result.to_html(name)
-        webbrowser.open(name)
+        styled_result.to_html(name) #HTML File saved to the location from where the program is run from
+        webbrowser.open(name) #Opens the HTML File in a browser automatically
     else:
         return
 
