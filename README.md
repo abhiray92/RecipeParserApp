@@ -5,8 +5,7 @@ This option will let one combine multiple recipe files in raw csv format and mer
 
 An example of the exported html file - 
 
-![image](https://github.com/abhiray92/RecipeParserApp/assets/42731567/fe51cb54-f062-411d-bfc9-7b20120c0da7)
-
+![image](https://github.com/abhiray92/RecipeParserApp/assets/42731567/e3cef3d6-2b31-4549-a5ec-364798a59dd1)
 
 
 <h3>Compare</h3>
