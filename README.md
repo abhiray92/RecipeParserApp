@@ -1,4 +1,4 @@
-</b>This is a simple application to parse raw csv files exported from a SCADA application. Although this application serves a pretty specific use case. It can still be used for various other purposes. This application has two components. </b>
+<h2>This is a simple application to parse raw csv files exported from a SCADA application. Although this application serves a pretty specific use case. It can still be used for various other purposes. This application has two components. </h2>
 
 <h3>Combine</h3>
 This option will let one combine multiple recipe files in raw csv format and merge them into a tabular format for a particular parameter form factor (assuminng its Vials in this case). The table can be exported in either CSV or HTML file format.
